@@ -1,0 +1,35 @@
+Menu principal el cual pedira que ingresemos el 1,2,3 para ir ingresar a diferentes opciones.
+-----------------------------
+#          AGENDA           #
+-----------------------------
+#      1. Crear contacto    #
+#      2. Buscar Contacto   #
+#      3. Eliminar Contacto #
+-----------------------------
+
+
+................................
+Este sera el menu donde crearemos un contacto a traves de una applist, y una vez hecho pondra HECHO.
+-----------------------------
+#          AGENDA           #
+-----------------------------
+#       Nombre:             #
+#       Telefono:           #
+-----------------------------
+
+................................
+Ingresaremos el contacto a buscar y este lo buscara a traves de la appList.
+-----------------------------
+#          AGENDA           #
+-----------------------------
+#       Contacto a buscar:  #
+-----------------------------
+
+................................
+Aqui ingresamos el contacto y lo buscara por la applist y lo eliminara.
+-----------------------------
+#          AGENDA           #
+-----------------------------
+#       Contacto a eliminar #
+-----------------------------
+edasdsadasaddas
