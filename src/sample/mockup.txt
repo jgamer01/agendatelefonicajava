@@ -3,8 +3,9 @@ Menu principal el cual pedira que ingresemos el 1,2,3 para ir ingresar a diferen
 #          AGENDA           #
 -----------------------------
 #      1. Crear contacto    #
-#      2. Buscar Contacto   #
-#      3. Eliminar Contacto #
+#      2. Listar Contactos  #
+#      3. Buscar Contacto   #
+#      4. Eliminar Contacto # // Esto no se si es posible
 -----------------------------
 
 
