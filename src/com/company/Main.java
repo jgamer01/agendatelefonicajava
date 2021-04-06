@@ -1,4 +1,4 @@
-package sample;
+package com.company;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class Main {
     static ArrayAgenda arrayagenda = new ArrayAgenda();
 
     public static void main(String[] args) {
-        PMenu pmenu = new Pmenu();
-        while (pMenu.show)) {  }
+        PMenu pmenu = new PMenu();
+        while (pmenu.show()) {  }
     }
 }

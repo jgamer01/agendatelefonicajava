@@ -1,8 +1,8 @@
-package sample;
+package com.company;
 
 class campotxt {
     String recibir(String prompt) {
-        return recibir(prompt, false)
+        return recibir(prompt, false);
     }
 
     String recibir(String prompt, boolean required) {
@@ -16,7 +16,7 @@ class campotxt {
                     return txt;
                 } else {
                     Tipoerrores tipoerrores = new Tipoerrores();
-                    tipoerrores.Warning("¡Introduce el campo porfavor!");
+                    tipoerrores.Warning("¡Introduce el campo por favor!");
                 }
             }
         }

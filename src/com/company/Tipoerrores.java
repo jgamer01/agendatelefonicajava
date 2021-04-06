@@ -1,4 +1,4 @@
-package sample;
+package com.company;
 
 public class Tipoerrores {
     void Failed (String txt){
@@ -10,7 +10,7 @@ public class Tipoerrores {
         printAnterior();
         System.out.println("\033[33m" + txt "033[0m");
     }
-    void Information (String txt){
+    static void Information(String txt){
         printAnterior();
         System.out.println("\033[36m" + txt "033[0m");
     }

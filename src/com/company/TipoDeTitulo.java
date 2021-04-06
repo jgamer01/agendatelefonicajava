@@ -1,7 +1,7 @@
 package com.company;
 
 public class TipoDeTitulo {
-    static void show(String TipoDeTitulo){
+    public static void show(String TipoDeTitulo){
 
         char[] Caracterarray = TipoDeTitulo.toCharArray();
         int caracteres = Caracterarray.length;

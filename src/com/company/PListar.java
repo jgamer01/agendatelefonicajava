@@ -1,4 +1,4 @@
-package sample;
+package com.company;
 
 public class PListar {
     boolean show(){
@@ -14,7 +14,9 @@ public class PListar {
         String[] opcions = {"Buscar, Crear"};
         String opcion = OpcionesMenu.Pedir(opcions);
         if ("1".equals(opcion)) {
-            P
+            PCrear pCrear = new PCrear();
+            PCrear.show();
+            else if
         }
     }
 }

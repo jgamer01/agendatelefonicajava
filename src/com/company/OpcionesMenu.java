@@ -1,4 +1,4 @@
-package sample;
+package com.company;
 
 public class OpcionesMenu {
     String Eleccion(String[] opcions){
