@@ -11,12 +11,15 @@ public class PListar {
         System.out.println();
 
         PMenu pMenu = new PMenu();
-        String[] opcions = {"Buscar, Crear"};
+        String[] opcions = {"Crear, Buscar"};
         String opcion = OpcionesMenu.Pedir(opcions);
         if ("1".equals(opcion)) {
             PCrear pCrear = new PCrear();
             PCrear.show();
-            else if
+            else if ("2".equals(opcion)){
+                PantallaBuscar pantallaBuscar = new PantallaBuscar();
+                PantallaBuscar.show();
+            }
         }
     }
 }
