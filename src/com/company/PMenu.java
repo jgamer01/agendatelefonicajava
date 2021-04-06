@@ -2,7 +2,7 @@ package com.company;
 
 public class PMenu {
     boolean show(){
-        com.company.TipoDeTitulo tipoDeTitulo = new com.company.TipoDeTitulo();
+        com.company.TipoDeTitulo tipoDeTitulo = new TipoDeTitulo();
         com.company.TipoDeTitulo.show("Agenda Telefonica");
 
         OpcionesMenu  opcionesMenu();
@@ -10,10 +10,10 @@ public class PMenu {
         String opcion = opcionesMenu.Eleccion(opcions);
 
         if ("1".equals(opcion)) {
-            Pcrear pcrear = new Pcrear();
+            PCrear pcrear = new PCrear();
             pcrear.show();
         } else if ("2".equals(opcion)) {
-            PListar pListar = new Plistar();
+            PListar pListar = new PListar();
             pListar.show();
         }else if ("3".equals(opcion)) {
             return false;

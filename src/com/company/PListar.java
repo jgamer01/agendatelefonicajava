@@ -5,7 +5,7 @@ public class PListar {
         TipoDeTitulo tipoDeTitulo = new TipoDeTitulo();
         TipoDeTitulo.show("Listar Contactos");
 
-        for(Array_contactos array_contactos: Main.Array_agenda.arraycontactos){
+        for(Array_contactos array_contactos: Main.ArrayAgenda.arraycontactos){
             System.out.println(Array_contactos.nombre);
         }
         System.out.println();
