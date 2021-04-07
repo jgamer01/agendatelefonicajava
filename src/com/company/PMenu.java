@@ -5,7 +5,7 @@ public class PMenu {
         com.company.TipoDeTitulo tipoDeTitulo = new TipoDeTitulo();
         com.company.TipoDeTitulo.show("Agenda Telefonica");
 
-        OpcionesMenu  opcionesMenu();
+        OpcionesMenu opcionesMenu = new OpcionesMenu();
         String[] opcions = {"1.Crear Contacto 2.Listar Contactos 3. Salir"};
         String opcion = opcionesMenu.Eleccion(opcions);
 

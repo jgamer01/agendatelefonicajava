@@ -2,8 +2,8 @@ package com.company;
 
 public class Array_contactos {
     String Nombre;
-    String apellido;
-    String Apellido;
+    String Apellido1;
+    String Apellido2;
     String SegundoApellido;
     String Telefono;
     String Correo;

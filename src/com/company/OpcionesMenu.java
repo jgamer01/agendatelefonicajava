@@ -15,8 +15,8 @@ public class OpcionesMenu {
             opcion = Main.scanner.nextLine();
 
             if (Integer.parseInt(opcion) > opcions.length) {
-                Mensaje mensaje = new Mensaje();
-                mensaje.mostrarError("Esa opcion no existe");
+                Tipoerrores tipoerrores = new Tipoerrores();
+                tipoerrores.Failed("Esa opcion no existe");
             } else {
                 Pedir = false;
             }
