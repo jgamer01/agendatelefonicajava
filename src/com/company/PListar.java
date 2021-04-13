@@ -3,24 +3,24 @@ package com.company;
 public class PListar {
     boolean show(){
         TipoDeTitulo tipoDeTitulo = new TipoDeTitulo();
-        TipoDeTitulo.show("Listar Contactos");
+        tipoDeTitulo.show("Listar Contactos");
 
-        for(Array_contactos array_contactos: Main.arrayagenda.array_contactos){
-            System.out.println(array_contactos.Nombre);
+        for(Contacto contacto : Main.arrayagenda.array_contactos){
+            System.out.println(contacto.Nombre);
         }
         System.out.println();
 
-        PMenu pMenu = new PMenu();
-        String[] opcions = {"Crear, Buscar"};
-        String opcion = OpcionesMenu
+        OpcionesMenu opcionesMenu = new OpcionesMenu();
+        String[] opcions = {"Crear", "Buscar"};
+        String opcion = opcionesMenu.Eleccion(opcions);
         if ("1".equals(opcion)) {
             PCrear pCrear = new PCrear();
-            PCrear.show();
+            pCrear.show();
 
         }
             else if ("2".equals(opcion)){
                 PBuscar pantallaBuscar = new PBuscar();
-                PBuscar.show();
+                pantallaBuscar.show();
             }
             return true;
     }

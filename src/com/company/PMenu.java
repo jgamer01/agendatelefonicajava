@@ -6,8 +6,8 @@ public class PMenu {
         com.company.TipoDeTitulo.show("Agenda Telefonica");
 
         OpcionesMenu opcionesMenu = new OpcionesMenu();
-        String[] opcions = {"1.Crear Contacto 2.Listar Contactos 3. Salir"};
-        String opcion = opcionesMenu.Eleccion(opcions);
+        String[] opciones = {"Crear Contacto", "Listar Contactos", "Pantalla Buscar"};
+        String opcion = opcionesMenu.Eleccion(opciones);
 
         if ("1".equals(opcion)) {
             PCrear pcrear = new PCrear();
@@ -16,6 +16,9 @@ public class PMenu {
             PListar pListar = new PListar();
             pListar.show();
         }else if ("3".equals(opcion)) {
+            PBuscar pBuscar = new PBuscar();
+            pBuscar.show();
+        }else {
             return false;
         }
         return true;

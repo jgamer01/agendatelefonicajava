@@ -1,22 +1,24 @@
 package com.company;
 
 class campotxt {
-    String recibir(String prompt) {
-        return recibir(prompt, false);
+    String pedir(String prompt) {
+        return pedir(prompt, false);
     }
 
-    String recibir(String prompt, boolean required) {
-        System.out.println("\033[35m" + prompt + ":\33[0m");
-        if (!required) {
+    String pedir(String prompt, boolean obligatiorio){
+        System.out.println("\033[35m" + prompt + ":\033[0m");
+        if(!obligatiorio){
+            return Main.scanner.nextLine();
         } else {
-            while (true) {
-                String txt = Main.scanner.nextLine();
 
-                if (!txt.isEmpty()) {
-                    return txt;
+            while(true){
+                String texto = Main.scanner.nextLine();
+
+                if(!texto.isEmpty()){
+                    return texto;
                 } else {
                     Tipoerrores tipoerrores = new Tipoerrores();
-                    tipoerrores.Warning("¡Introduce el campo por favor!");
+                    tipoerrores.Warning("!Introduzca el campo!");
                 }
             }
         }

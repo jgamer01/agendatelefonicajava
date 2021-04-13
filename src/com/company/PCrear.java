@@ -1,16 +1,18 @@
 package com.company;
 
 public class PCrear {
-    void show() {
-        Array_contactos array_contactos = new Array_contactos();
+    static void show() {
+        Contacto contacto = new Contacto();
         TipoDeTitulo tipoDeTitulo = new TipoDeTitulo();
-        TipoDeTitulo.show("Creacion de contacto");
-        array_contactos.nombre = campotxt.recibir("Nombre o Apodo");
-        array_contactos.apellido = campotxt.recibir("Primer apellido");
-        array_contactos.telefono = campotxt.recibir ("Telefono");
-        array_contactos.correo = campotxt.recibir("correo electronico");
+        tipoDeTitulo.show("Creacion de contacto");
+        campotxt ctxt = new campotxt();
+        contacto.Nombre = ctxt.pedir("Nombre o Apodo", true);
+        contacto.Apellido = ctxt.pedir("Primer apellido");
+        contacto.Telefono = ctxt.pedir("Telefono", true);
+        contacto.Correo = ctxt.pedir("correo electronico");
+        Main.arrayagenda.array_contactos.add(contacto);
         Tipoerrores tipoerrores = new Tipoerrores();
-        Tipoerrores.Information("Contacto guardado, felicidades!");
+        tipoerrores.Information("Contacto guardado, felicidades!");
 
     }
 }
